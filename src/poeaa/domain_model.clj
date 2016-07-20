@@ -48,7 +48,7 @@
         :calculate-recognitions
         (fn []
           ((product :calculate-revenue-recognitions)
-           (make-contract product revenue when-signed id revenue-recognitions)))))))
+           (make-contract product revenue when-signed id @revenue-recognitions)))))))
 
 (defn make-product [name recognition-strategy]
   (fn [action]
