@@ -55,7 +55,7 @@
 (defn make-product [name recognition-strategy]
   (fn [action]
     (case action
-      :calculate-revenue-recognitions
+      :calculate-revenue-recognitions ;; duck typing duck typing polymorphism 
       (fn [contract]
         ((recognition-strategy :calculate-revenue-recognitions)) contract))))
     
