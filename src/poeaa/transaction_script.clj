@@ -8,6 +8,12 @@
 
 (declare add-days)
 
+(declare next)
+
+(declare find-recognitions-for)
+
+(declare date-time)
+
 (defn calculate-revenue-recognitions [contract-number]
   (let [contracts (find-contract contract-number)
         total-revenue (:revenue contracts)
@@ -23,3 +29,14 @@
             (insert-recognition contract-number (nth allocation 0) recognition-date)
             (insert-recognition contract-number (nth allocation 1) (add-days recognition-date 30))
             (insert-recognition contract-number (nth allocation 2) (add-days recognition-date 60))))))
+          
+(defn recognized-revennue [contract-number as-of]
+  (loop [result 0
+         rs (find-recognitions-for contract-number as-of)]
+    (if rs
+        (recur (+ result (:amount rs)) (next rs))
+        result)))
+      
+(calculate-revenue-recognitions 12322)
+
+(recognized-revennue 12322 (date-time 2015 12 25))
