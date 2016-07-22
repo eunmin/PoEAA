@@ -78,10 +78,10 @@
                                                      (nth allocation 0)
                                                      ((contract :get-when-signed))))
           ((contract :add-add-revenue-recognition) (make-revenue-recognition
-                                                     (nth allocation 0)
+                                                     (nth allocation 1)
                                                      (add-days ((contract :get-when-signed)) first-recognition-offset)))
           ((contract :add-add-revenue-recognition) (make-revenue-recognition
-                                                     (nth allocation 0)
+                                                     (nth allocation 2)
                                                      (add-days ((contract :get-when-signed)) second-recognition-offset))))))))
 
 (defn make-word-processor [name]
