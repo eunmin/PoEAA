@@ -1,8 +1,8 @@
-package com.eumin.poeaa.transaction_script.service;
+package com.eumin.poeaa.ex1.transaction_script.service;
 
-import com.eumin.poeaa.transaction_script.gateway.RevenueRecognitionGateway;
-import com.eumin.poeaa.transaction_script.util.MfDate;
-import com.eumin.poeaa.transaction_script.util.Money;
+import com.eumin.poeaa.ex1.transaction_script.gateway.table_data_gateway.RevenueRecognitionGateway;
+import com.eumin.poeaa.ex1.transaction_script.util.MfDate;
+import com.eumin.poeaa.ex1.transaction_script.util.Money;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

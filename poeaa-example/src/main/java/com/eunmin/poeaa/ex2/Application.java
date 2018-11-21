@@ -1,7 +1,7 @@
-package com.eumin.poeaa.transaction_script;
+package com.eunmin.poeaa.ex2;
 
-import com.eumin.poeaa.transaction_script.gateway.RevenueRecognitionGateway;
-import com.eumin.poeaa.transaction_script.service.RecognitionService;
+import com.eumin.poeaa.ex1.transaction_script.gateway.table_data_gateway.RevenueRecognitionGateway;
+import com.eumin.poeaa.ex1.transaction_script.service.RecognitionService;
 import io.undertow.Undertow;
 import io.undertow.server.HttpHandler;
 import io.undertow.server.HttpServerExchange;

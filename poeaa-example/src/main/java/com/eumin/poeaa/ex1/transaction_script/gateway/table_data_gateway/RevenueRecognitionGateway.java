@@ -1,7 +1,7 @@
-package com.eumin.poeaa.transaction_script.gateway;
+package com.eumin.poeaa.ex1.transaction_script.gateway.table_data_gateway;
 
-import com.eumin.poeaa.transaction_script.util.MfDate;
-import com.eumin.poeaa.transaction_script.util.Money;
+import com.eumin.poeaa.ex1.transaction_script.util.MfDate;
+import com.eumin.poeaa.ex1.transaction_script.util.Money;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
